@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+}
+.container-dinamico {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.img-custom {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  display: block;
+  border-radius: 8px;
+}
+.link-custom {
+  font-weight: bold;
+  text-decoration: underline;
+}
