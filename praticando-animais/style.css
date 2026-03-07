@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.galeria {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.galeria img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 5px solid transparent;
+}
+.ativo-Gato {
+  border-color: red;
+}
+.ativo-Cachorro {
+  border-color: blue;
+}
+.ativo-Hamster {
+  border-color: green;
+}
+.ativo-Lagartixa {
+  border-color: purple;
+}
+.btn-limpar {
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.info-box {
+  margin-top: 20px;
+  max-width: 800px;
+}
