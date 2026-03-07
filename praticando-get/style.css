@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+.cor-box {
+  display: inline-block;
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+  border: 2px solid #000;
+  text-align: center;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.bg-red {
+  background-color: red;
+}
+.bg-green {
+  background-color: green;
+}
+
+.bg-blue {
+  background-color: rgb(75, 75, 171);
+}
+
+.dark-mode {
+  color: white;
+}
+
+.dark-mode a {
+  color: white;
+  text-decoration: underline;
+}
+
+.dark-mode hr {
+  border-color: rgba(255, 255, 255, 0.3);
+}
