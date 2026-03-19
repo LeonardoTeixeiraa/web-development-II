@@ -19,7 +19,15 @@
     $email = $_POST["email"];
     //Exibe os dados
     echo "<p>Nome informado: $nome<br>Email: $email</p>";
+    //outro metodo para pegar os dados é usando o filter input:
+    echo "<strong>Utilizando o filter input para receber dados: </strong>";
+    $nome = filter_input(INPUT_POST, "nome", FILTER_SANITIZE_SPECIAL_CHARS);
+    $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+    echo "<p>Nome informado: $nome<br>Email: $email</p>";
     ?>
+
+
+
 </body>
 
 </html>
