@@ -1,3 +1,23 @@
+<?php
+    session_start();
+
+    $erro = null;
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+        $usuario = $_POST['usuario'] ?? '';
+        $senha = $_POST['senha'] ?? '';
+
+        //define usuário fixo
+        if ($usuario === 'admin' && $senha === '123'){
+            $_SESSION['usuario'] = $usuario;
+
+             header('Location: dashboard.php');
+        exit;
+    } else {
+        $erro = "Usuário ou senha inválidos";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,8 +41,8 @@
                     <label for="" class="form-input">Senha</label>
                     <input type="password" name="senha" class="form-control" required>
                 </div>
-                <div class="d-grid">
-                    <button type="submit" class="btn btn-primary">Entrar</button>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary px-3 py-2">Entrar</button>
                 </div>
             </form>
         </div>
