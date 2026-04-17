@@ -1,10 +1,10 @@
 <?php 
 //Recebe o id da requisição HTTP
-$data = json_decode(file_get_contents('php://input'));
+$data = json_decode(file_get_contents('php://input'), true);
 $id = $data['id'];
 
 //Receber os dados atuais da base de dados
-$tarefas = json_decode(file_get_contents('../tarefas.json'));
+$tarefas = json_decode(file_get_contents('../tarefas.json'), true);
 
 //remover a tarefa do array sobrescrevendo
 $tarefas = array_filter($tarefas, fn($t) => $t['id'] !== $id);

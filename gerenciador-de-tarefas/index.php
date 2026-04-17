@@ -1,17 +1,18 @@
 <?php
-    session_start();
+session_start();
 
-    $erro = null;
+$erro = null;
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-        $usuario = $_POST['usuario'] ?? '';
-        $senha = $_POST['senha'] ?? '';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $usuario = $_POST['usuario'] ?? '';
+    $senha = $_POST['senha'] ?? '';
 
-        //define usuário fixo
-        if ($usuario === 'admin' && $senha === '123'){
-            $_SESSION['usuario'] = $usuario;
-
-             header('Location: dashboard.php');
+    //define usuário fixo
+    if ($usuario === 'admin' && $senha === '123') {
+        $_SESSION['usuario'] = $usuario;
+        //cookie de 7 dias
+        setcookie('usuario', $usuario, time() + (86400 * 7), "/");
+        header('Location: dashboard.php');
         exit;
     } else {
         $erro = "Usuário ou senha inválidos";

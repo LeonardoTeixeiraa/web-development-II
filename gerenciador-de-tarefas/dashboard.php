@@ -31,8 +31,12 @@ require 'includes/auth.php'
 
         <!-- Título + botão -->
         <div class="d-flex justify-content-between align-items-center mb-3">
-            <h3>Minhas Tarefas</h3>
-            <button class="btn btn-primary">+ Nova Tarefa</button>
+            <h3 class="mb-0">Minhas Tarefas</h3>
+
+            <div class="input-group" style="max-width: 400px;">
+                <input type="text" id="titulo" class="form-control" placeholder="Inserir nova tarefa">
+                <button class="btn btn-primary" onclick="adicionarTarefa()">+Nova tarefa</button>
+            </div>
         </div>
 
         <!-- CARD -->
@@ -48,17 +52,7 @@ require 'includes/auth.php'
                             <th>Ações</th>
                         </tr>
                     </thead>
-                    <tbody>
-
-                        <!-- Exemplo estático -->
-                        <tr>
-                            <td>Estudar PHP</td>
-                            <td><span class="badge bg-warning">Pendente</span></td>
-                            <td>
-                                <button class="btn btn-success btn-sm">Concluir</button>
-                                <button class="btn btn-danger btn-sm">Excluir</button>
-                            </td>
-                        </tr>
+                    <tbody id="lista">
 
                     </tbody>
                 </table>
@@ -67,7 +61,7 @@ require 'includes/auth.php'
         </div>
 
     </div>
-
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
