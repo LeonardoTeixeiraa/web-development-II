@@ -147,6 +147,17 @@ header {
     margin: 20px;
 }
 
+#items-list{
+    list-style: none;
+    padding: 0;
+}
+
+#items-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 .card .card-dat {
     font-size: 12px;
     color: #ccc;
