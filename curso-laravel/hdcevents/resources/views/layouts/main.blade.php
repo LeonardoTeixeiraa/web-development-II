@@ -8,42 +8,42 @@
     <title>@yield('title')</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto"stylesheet">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" stylesheet">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
 
     <script src="/js/scripts.js"></script>
 </head>
 
 <body>
-   <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="collapse navbar-collapse" id="navbar">
-            <a href="/" class="navbar-brand">
-                <img src="/img/hdcevents_logo.jpeg" alt="HDC Events">
-            </a>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="/" class="nav-link">Eventos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/events/create" class="nav-link">Criar Eventos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/produtos" class="nav-link">Entrar</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/produtos" class="nav-link">Cadastrar</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-   </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse" id="navbar">
+                <a href="/" class="navbar-brand">
+                    <img src="/img/hdcevents_logo.jpeg" alt="HDC Events">
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/events/create" class="nav-link">Criar Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/produtos" class="nav-link">Entrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/produtos" class="nav-link">Cadastrar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     @yield('content')
     <footer>
         <p>HDC Events &copy; 2026</p>
