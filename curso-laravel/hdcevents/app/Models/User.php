@@ -66,4 +66,8 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function events(){
+        return $this->belongsTo('app\Models\Event');
+    }
 }
