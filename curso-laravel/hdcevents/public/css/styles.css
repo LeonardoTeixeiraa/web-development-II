@@ -30,10 +30,10 @@ header {
     border-color: #c28008;
 }
 
-.msg{
-    background-color: #D4EDDA ;
+.msg {
+    background-color: #d4edda;
     color: #155724;
-    border: #C3E6CB 1px solid;
+    border: #c3e6cb 1px solid;
     width: 100%;
     margin-bottom: 0;
     text-align: center;
@@ -101,7 +101,7 @@ header {
     max-width: 25%;
     border-radius: 10px;
     padding: 0;
-    margin: .5%;
+    margin: 0.5%;
 }
 
 #events-container img {
@@ -121,11 +121,11 @@ header {
 }
 
 #info-container h1 {
-   font-size: 36px;
-   font-weight: 900;
+    font-size: 36px;
+    font-weight: 900;
 }
 
-#info-container p{
+#info-container p {
     margin: 0;
     font-size: 14px;
     display: flex;
@@ -137,17 +137,17 @@ header {
     font-weight: bold;
 }
 
-#info-container ion-icon{
+#info-container ion-icon {
     font-size: 20px;
     color: #f2a340;
     margin-right: 10px;
 }
 
-#info-container #event-submit{
+#info-container #event-submit {
     margin: 20px;
 }
 
-#items-list{
+#items-list {
     list-style: none;
     padding: 0;
 }
@@ -184,6 +184,15 @@ header {
     font-size: 14px;
 }
 
+/*Dashboard*/
+.dashboard-title-container {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.dashboard-events-container th {
+    width: 25%;
+}
 /* Footer */
 footer {
     text-align: center;
